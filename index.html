@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Резервное перенаправление через meta — с задержкой 0 секунд -->
+  <meta http-equiv="refresh" content="0;url=https://workupload.com/file/ymECbyNqHAd" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Перенаправление…</title>
+  <style>
+    /* Простая минимальная стилизация */
+    html,body{height:100%;margin:0;font-family:Arial, Helvetica, sans-serif;background:#f6f7fb;color:#222;display:flex;align-items:center;justify-content:center}
+    .box{max-width:640px;padding:24px;text-align:center;border-radius:12px;background:#fff;box-shadow:0 6px 24px rgba(0,0,0,0.08)}
+    a{color:#0b66ff;text-decoration:none}
+    .count{font-weight:700}
+  </style>
+  <script>
+    // Безопасный JS-редирект при загрузке страницы.
+    // Используем location.replace, чтобы пользователь не мог вернуться на эту страницу через "назад".
+    (function(){
+      try{
+        // Если нужно — показать короткий таймер перед редиректом.
+        // Здесь мы выполняем немедленный редирект.
+        window.addEventListener ? window.addEventListener('DOMContentLoaded', function(){
+          // Используем replace, чтобы удалить текущий URL из истории браузера
+          location.replace('https://workupload.com/file/ymECbyNqHAd');
+        }) : (window.onload = function(){
+          location.replace('https://workupload.com/file/ymECbyNqHAd');
+        });
+      }catch(e){
+        // Если JS упал — ничего не делаем, есть meta-refresh как запасной вариант
+        console.error(e);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div class="box">
+    <h1>Идёт перенаправление…</h1>
+    <p>Если перенаправление не произошло автоматически — нажмите по ссылке:</p>
+    <p><a href="https://workupload.com/file/ymECbyNqHAd" target="_blank" rel="noopener noreferrer">Перейти на https://workupload.com/file/ymECbyNqHAd</a></p>
+    <p class="small">Если вы не хотите, чтобы эта страница сохранялась в истории браузера, используйте кнопку "Назад" дважды.</p>
+  </div>
+</body>
+</html>
